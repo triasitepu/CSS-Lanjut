@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon/png" href="icon.png" sizes="16x16">
     <title>inline-grid</title>
 </head>
 <style>
@@ -10,13 +11,13 @@
         display: inline-grid;
         grid-template-columns: auto auto auto;
         background-color: grey;
-        padding: 10px;
-        grid-gap: 50px;
+        padding: 20px;
+        grid-gap: 0px;
     }
     .item_grid {
         background-color: rgba(255, 255, 255, 0.8);
         border: 1px solid rgba(0, 0, 0, 0.8);
-        padding: 20px;
+        padding: 30px;
         font-size: 30px;
         text-align: center;
     }
@@ -33,20 +34,10 @@
         <div class="item_grid">7</div>
         <div class="item_grid">8</div>
         <div class="item_grid">9</div>
-        <div>Kesimpulan skenario 1 adalah program tersebut menggunakan css untuk membuat
-            tata letak grid dengan 3 kolom. Dimana display adalah grid, dan Penggunaan grid-template-columns: auto auto auto; 
-            menentukan bahwa grid memiliki 3 kolom dengan lebar otomatis. Kemudian setiap elemen yang memiliki class item_grid 
-            mempunyai style tertentu yang telah diatur sesuai class css item_grid.
+        <div>Kesimpulan dari  program tersebut adalah pada atribut display memiliki tipe inline-grid yang merupakan properti CSS yang digunakan
+            untuk menentukan bahwa elemen trsebut akan ditampilkan sebagai grid 
         </div>
-        <div>Kesimpulan skenario 3 adalah program tersebut menambahkan elemen grid-column-gap:100px dan grid-row-gap:50px.
-            Kegunaan dari properti css tersebut adalah mengatur jarak antara kolom-kolom grid menjadi 100px dan jarak 
-            antara baris-baris grid menjadi 50px. Ini berarti dalam tata letak grid CSS, akan ada jarak 100px di 
-            antara setiap kolom dan 50px di antara setiap baris.
-        </div>
-        <div>Kesimpulan skenario 4 adalah program tersebut menambahkan properti css grid-gap:50px. Ini digunakan untuk mengatur
-            jarak antara kolom dan baris dalam grid menjadi 50px. Ini berarti akan ada 50px ruang antara setiap kolom dan 
-            baris dalam tata letak grid CSS. 
-        </div>
+       
     </div>
 </body>
 </html>

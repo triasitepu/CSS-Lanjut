@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon/png" href="icon.png" sizes="16x16">
+    <title>GridLayout2(2)</title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-gap: 50px;
+        background-color: grey;
+        padding: 10px;
+        grid-template-columns: auto auto auto auto;
+    }
+    .item1 {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        grid-column: 1/4;
+    }
+    .item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <br>
+    <div>
+        Kesimpulan dari skenario 1 adalah properti grid-gro:1/4; menandakan bahwa elemen tersebut akan memanjang dari baris pertaman hinggga
+        baris sebelum keempat dalam grid.
+    </div>
+    <br>
+    <div>
+        Kesimpulan dari skenario 2 adalah properti grid-column menandakan bahwa elemen tersebut akan memanjang dari kolom pertaman 
+        higga kolom sebelum keepat pada grid.
+    </div>
+</body>
+</html>
