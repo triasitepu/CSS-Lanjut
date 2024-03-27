@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+    margin: 0px;
+    border: black solid;
+    padding: 1px;
+    height: 96vh;
+    width: 100vw;
+}
+div{
+    border: black solid;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40px  55px auto 100px 40px;
+}
+
+.nduwurdewe{
+    grid-row: 1;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 2px 2px 0;
+    padding-left: 0;
+    background-color: lightgrey;
+    color: white;
+
+}
+.nduwurdewe.img{
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+
+.nduwurdewe div{
+    padding: 1px;
+    text-align: center;
+    position: relative;
+}
+
+
+header{
+    grid-row: 2;
+    grid-column: 1/4;
+    display: flex;
+    background-color: cadetblue;
+    flex: 70%;
+}
+
+.logo{
+    width: 30%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.logo.img{
+    display: block;
+    margin: auto;
+}
+
+nav{
+    width: 70%;
+    display: flex;
+    background-color: cadetblue;
+    color: white;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    list-style-type: none;
+    padding: 0 20px 0 20px;
+}
+a{
+    text-decoration: none;
+}
+
+.content{
+    grid-row: 3;
+    grid-column: 1/4;
+}
+
+.footer{
+    grid-row: 5;
+    grid-column: 1/4;
+}
+

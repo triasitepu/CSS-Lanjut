@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Flex Box</title>
+  </head>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+    .wadah_flex {
+      background-color: green;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    .wadah_flex > div {
+      background-color: goldenrod;
+      margin: 10px;
+      padding: 30px;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <div class="wadah_flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <p>
+      Kesimpulan skenario 1 adalah pada div dipanggil kelas css bernama
+      wadah_flex yang akan memengaruhi gaya dari div itu sendiri yaitu konten
+      diatur display nya flex artinya mengaktifkan model flexbox. Kemudian
+      disini saya juga memberikan bg color untuk body yaitu berwarna
+      antiquewhite.
+    </p>
+    <p>
+      Kesimpulan skenario 2 adalah pada div dipanggil kelas css wadah_flex yang
+      sudah diatur sehingga memengaruhi gaya pada div tersebut. Dimana mengatur
+      tata letak menggunakan display flex dengan flex direction row, artinya
+      konten di dalam div akan ditata secara horizontal. Kemudian di style css
+      terdapat kelas .wadah_flex > div dimana ini adalah kelas yang mengatur
+      anak (div) dari div yang memiliki kelas wadah_flex. Dimana konten dalam
+      anak tersebut diatur memiliki latar belakang merah, margin 10px, padding
+      30px, dan ukuran font 30px.
+    </p>
+    <p>
+      Kesimpulan skenario 3 adalah saya mencoba dengan nilai yang
+      berbeda-beda<br />
+      1. flex-direction:column, elemen ini akan diatur secara vertikal yaitu
+      dari atas ke bawah. Dimulai dari nomer 1 - 12. <br />
+      2. flex-direction:column-reverse, sama seperti tipe column, tetapi pada
+      tipe column reverse nomor akan diatur terbalik, yaitu mulai dari angka 12
+      - 1. <br />
+      3. flex-direction:row, elemen ini akan diatur secara horizontal yaitu dari
+      kiri ke kanan. Dimulai dari no 1 - 12. <br />
+      4. flex-direction:row-reverse, sama seperti tipe column, tetapi pada tipe
+      row reverse nomor akan diatur terbalik, yaitu mulai dari angka 12 - 1.
+      <br />
+    </p>
+    <p>
+      Kesimpulan skenario 4 adalah flex wrap diatur dengan nilai berbeda-beda 1.
+      flex-wrap:nowrap, jika ruang dalam flex tidak mencukupi, maka konten tetap
+      akan diatur dalam satu baris atau satu kolom (tanpa wrapping) <br />
+      2. flex-wrap:wrap, jika ruang dalam fle tidak mencukupi, maka konten akan
+      memulai wrapping yaitu akan terdapat baris baru untuk menampung konten
+      yang tidak termuat dalam ruang tsb. <br />
+      3. flex-wrap:wrap-reverse, fungsinya sama seperti tipe wrap, tetapi konten
+      akan diatur dengan urutan terbalik. Semisal pada wrap kontennya adalah
+      1-12, maka wi wrap-reverse adalah 12-1. <br />
+    </p>
+    <p>
+      Kesimpulan skenario 5 adalah flex flow merupakan elemen gabungan dari 2
+      elemen yaitu flex direction dan flex wrap. <br />
+      1. flex-flow:row wrap, artinya konten diatur flex-direction:row dan
+      flex-wrap:wrap. Hasilnya adalah konten akan ditampilkan secara horizontal
+      dari kiri ke kanan dengan adanya wrapping.
+    </p>
+    <p>
+      Kesimpulan skenario 6 adalah saya mencoba beberapa nilai dari justify-content
+      1. justify-content:end, Pada tata letak horizontal, konten akan disusun ke kanan, 
+      dan pada tata letak vertikal, item akan disusun ke bawah.
+      2. justify-content:center, konten akan ditempatkan di tengah.
+     
+    </p>
+  </body>
+</html>
